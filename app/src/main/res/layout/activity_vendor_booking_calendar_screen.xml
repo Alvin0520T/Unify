@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/blue_gradient_background" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="55dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="12dp"
+        android:background="#00000000"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/back_button_icon" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center"
+        android:text="Book a Date"
+        android:textColor="@color/text"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:id="@+id/calendarTable1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_border_background"
+        android:layout_below="@+id/titleText"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:stretchColumns="0,1,2,3,4,5,6">
+
+
+        <TableRow>
+            <TextView
+                android:layout_width="376dp"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="7"
+                android:background="@drawable/left_right_rounded_border"
+                android:padding="8dp"
+                android:text="November 2023"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="Mon"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginHorizontal="2dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="Tue"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginHorizontal="2dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="Wed"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginHorizontal="2dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="Thu"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginHorizontal="2dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Fri"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="2dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="Sat"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginHorizontal="2dp"
+
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="Sun"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginHorizontal="2dp"
+
+                android:textStyle="bold"/>
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="1"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="2"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="3"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="4"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="5"
+                android:textAlignment="center" />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="6"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="7"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="8"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="9"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="10"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="11"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="12"
+                android:textAlignment="center" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="13"
+                android:layout_marginHorizontal="2dp"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="14"
+                android:layout_marginHorizontal="2dp"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="15"
+                android:layout_marginHorizontal="2dp"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/cnsDate16Button"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/red_circle"
+                android:layout_marginHorizontal="2dp"
+                android:text="16"
+                android:textSize="1.8mm"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/cnsDate17Button"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/red_circle"
+                android:text="17"
+                android:textSize="1.8mm"
+                android:layout_marginHorizontal="2dp"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/cnsDate18Button"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/red_circle"
+                android:text="18"
+                android:textSize="1.8mm"
+                android:layout_marginHorizontal="2dp"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/cnsDate19Button"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/red_circle"
+                android:text="19"
+                android:textSize="1.8mm"
+                android:layout_marginHorizontal="2dp"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                app:backgroundTint="@null"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent">
+            <Button
+                android:id="@+id/cnsDate20Button"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/red_circle"
+                android:text="20"
+                android:textSize="1.8mm"
+                android:layout_marginHorizontal="2dp"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                app:backgroundTint="@null"/>
+            <Button
+                android:id="@+id/cnsDate21Button"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/red_circle"
+                android:text="21"
+                android:textSize="1.8mm"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="2dp"
+                app:backgroundTint="@null"/>
+            <Button
+                android:id="@+id/cnsDate22Button"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/red_circle"
+                android:text="22"
+                android:textSize="1.8mm"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="2dp"
+                app:backgroundTint="@null"/>
+            <Button
+                android:id="@+id/cnsDate23Button"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/red_circle"
+                android:text="23"
+                android:textSize="1.8mm"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="2dp"
+                app:backgroundTint="@null"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="24"
+                android:layout_marginHorizontal="2dp"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="25"
+                android:layout_marginHorizontal="2dp"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="26"
+                android:layout_marginHorizontal="2dp"
+                android:textAlignment="center" />
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="27"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="28"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="29"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="30"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textAlignment="center" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/calendarTable2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendarTable1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/blue_border_background"
+        android:stretchColumns="0,1,2,3,4,5,6">
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="376dp"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="7"
+                android:background="@drawable/left_right_rounded_border"
+                android:padding="8dp"
+                android:text="December 2023"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Mon"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="2dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Tue"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="2dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Wed"
+                android:layout_marginHorizontal="2dp"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Thu"
+                android:layout_marginHorizontal="2dp"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Fri"
+                android:layout_marginHorizontal="2dp"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Sat"
+                android:layout_marginHorizontal="2dp"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Sun"
+                android:layout_marginHorizontal="2dp"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="2"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="3"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/tffDate4Button"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/red_circle"
+                android:text="4"
+                android:textSize="1.8mm"
+                android:layout_marginHorizontal="2dp"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/tffDate5Button"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/red_circle"
+                android:text="5"
+                android:textSize="1.8mm"
+                android:layout_marginHorizontal="2dp"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/tffDate6Button"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/red_circle"
+                android:text="6"
+                android:textSize="1.8mm"
+                android:layout_marginHorizontal="2dp"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/tffDate7Button"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/red_circle"
+                android:text="7"
+                android:textSize="1.8mm"
+                android:layout_marginHorizontal="2dp"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/tffDate8Button"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/red_circle"
+                android:text="8"
+                android:textSize="1.8mm"
+                android:layout_marginHorizontal="2dp"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                app:backgroundTint="@null"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="9"
+                android:layout_marginHorizontal="2dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="10"
+                android:layout_marginHorizontal="2dp"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="11"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="12"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="13"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="14"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="15"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="16"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="17"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="18"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="19"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="20"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="21"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="22"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="23"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="24"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="25"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="26"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="27"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="28"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="29"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="30"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="31"
+                android:textAlignment="center" />
+
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>
